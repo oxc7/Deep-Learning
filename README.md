@@ -1,2 +1,2 @@
 # Deep-Learning
-Source code that I wrote for Deep Learning class at University of Tokyo
+For Deep Learning assignments at University of Tokyo
