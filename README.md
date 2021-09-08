@@ -1,2 +1,2 @@
 # Deep-Learning
-For Deep Learning assignments at University of Tokyo
+For Deep Learning assignments at the University of Tokyo
