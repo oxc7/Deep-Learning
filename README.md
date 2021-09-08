@@ -1,2 +1,2 @@
 # Deep-Learning
-For Deep Learning assignments at the University of Tokyo
+Source code for Deep Learning class at the University of Tokyo
