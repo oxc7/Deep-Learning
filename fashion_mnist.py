@@ -14,10 +14,10 @@ import matplotlib.pyplot as plt
 
 from sklearn.utils import shuffle from sklearn.metrics import f1_score from sklearn.model_selection import train_test_split from sklearn.metrics import accuracy_score
 
-学習データ
+#学習データ
 x_train = np.load(‘drive/My Drive/Colab Notebooks/DLBasics2021_colab/Lecture07_20210527/data/x_train.npy’)
 
-テストデータ
+#テストデータ
 x_test = np.load(‘drive/My Drive/Colab Notebooks/DLBasics2021_colab/Lecture07_20210527/data/x_test.npy’)
 
 print (x_train, x_test) class dataset(torch.utils.data.Dataset): def init(self, x_test): self.x_test = x_test.reshape(-1, 784).astype(‘float32’) / 255
@@ -29,7 +29,7 @@ def __getitem__(self, idx):
     return torch.tensor(self.x_test[idx], dtype=torch.float)
 trainval_data = dataset(x_train) test_data = dataset(x_test)
 
-VAEの実装
+#VAEの実装
 batch_size = 100
 
 val_size = 10000 train_size = len(trainval_data) - val_size
